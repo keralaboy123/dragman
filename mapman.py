@@ -2,7 +2,7 @@ from  dragman  import  DragEventManager,pynput
 
 emu = pynput.mouse.Controller()
 
-# print removed by commenting 
+
 class maper (DragEventManager):
         listener = None
         draged = False
@@ -42,18 +42,18 @@ class maper (DragEventManager):
                      
              elif  button == pynput.mouse.Button.right:
 
-                     #print ("onclick of   of  maper") 
+                     print ("onclick of   of  maper") 
                      super().on_click( x,y, button, buttonpressing )
                      
                      if  buttonpressing is False:  # handsup
-                             #print(" button released on maper checking for  lastdrag event")
+                             print(" button released on maper checking for  lastdrag event")
 
                              if self.isDragedLast():
-                                     #print("there was a drag so this button release have nothing to handle")
+                                     print("there was a drag so this button release have nothing to handle")
                                      pass
 
                              else:                            
-                                      #print("no drag happened  its a right  clickRelease so emulating   RIGHT button")
+                                      print("no drag happened  its a right  clickRelease so emulating   RIGHT button")
                                       
                                       self.skipque.append( pynput.mouse.Button.right)
                                       self.skipque.append( pynput.mouse.Button.right)
