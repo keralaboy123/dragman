@@ -1,16 +1,10 @@
-
+Hu
 import pynput
 
 
 
 
 #21/12/2019  
-
-class  logicalAnalyser():
-    " observe events  and save it then analyse logic by states "
-    def is_something_true( STATE):
-        pass 
-    
 
 class  logicalDragAnalyser():
     " if mouse moving while button pressed its dragging.. "
